@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
+    <section className="portfolio scroll">
       <div className="inner">
-        <h2>Portfolio</h2>
+        {/* 게발담당자 : 팀프로젝트,,개인 작업(5개 목표 (퍼블리싱 > 프론트) */}
+        <h2 data-aos="fade-up">Portfolio</h2>
         <div className="contents">
           {/* 팀프로젝트 */}
           <div className="portfolio-box">
@@ -117,48 +128,98 @@ const Portfolio = () => {
           {/* 개인 스터디 프로젝트 */}
           <div className="portfolio-box">
             <h3>Study Project</h3>
-            <ul className="portfolio-list">
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src="/images/sample.png" alt="portfolio" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src="/images/sample.png" alt="portfolio" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src="/images/sample.png" alt="portfolio" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src="/images/sample.png" alt="portfolio" />
-                </a>
-              </li>
-            </ul>
+            {/* 스와이퍼 배치 */}
+            <>
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img src="/images/sample.png" alt="portfolio" />
+                    </a>
+                  </li>
+                </SwiperSlide>
+              </Swiper>
+            </>
           </div>
         </div>
       </div>
