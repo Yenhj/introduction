@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 
 const Portfolio = () => {
+  const path = process.env.PUBLIC_URL;
   return (
     <section className="portfolio scroll">
       <div className="inner">
@@ -28,7 +29,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src="/images/sample.png" alt="project" />
+                  <img src={`${path}/images/sample.png`} alt="visual" />
                 </a>
                 (이미지 클릭시 프로젝트 페이지로 이동합니다.)
               </div>
@@ -54,7 +55,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src="/images/sample.png" alt="project" />
+                  <img src={`${path}/images/sample.png`} alt="visual" />
                 </a>
                 (이미지 클릭시 프로젝트 페이지로 이동합니다.)
               </div>
@@ -80,7 +81,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src="/images/sample.png" alt="project" />
+                  <img src={`${path}/images/sample.png`} alt="visual" />
                 </a>
                 (이미지 클릭시 프로젝트 페이지로 이동합니다.)
               </div>
@@ -106,7 +107,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src="/images/sample.png" alt="project" />
+                  <img src={`${path}/images/sample.png`} alt="visual" />
                 </a>
                 (이미지 클릭시 프로젝트 페이지로 이동합니다.)
               </div>
@@ -154,7 +155,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
@@ -166,7 +167,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
@@ -178,7 +179,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
@@ -190,7 +191,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
@@ -202,7 +203,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
@@ -214,7 +215,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      <img src="/images/sample.png" alt="portfolio" />
+                      <img src={`${path}/images/sample.png`} alt="visual" />
                     </a>
                   </li>
                 </SwiperSlide>
