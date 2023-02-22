@@ -1,5 +1,21 @@
-.active {
-  
-  bottom: 100px !important;
+.gotop {
+  position: fixed;
+  right: 65px;
+  bottom: -200px;
+  z-index: 9997px;
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  transition: bottom 0.5s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  img {
+    width: 60px;
+    height: 70px;
+  }
+}
 
+.active {
+  bottom: 100px !important;
 }

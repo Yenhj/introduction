@@ -2,23 +2,6 @@ import { useEffect, useRef } from "react";
 import Anime from "../assets/Anime";
 
 const Gotop = () => {
-  const style = {
-    position: "fixed",
-    right: 65,
-    bottom: -200,
-    zIndex: 9999999,
-    cursor: "pointer",
-    fontSize: "17px",
-    color: "black",
-    transition: "bottom 0.5s",
-  };
-  const img = {
-    position: "fixed",
-    right: 60,
-    bottom: 120,
-    width: 60,
-    height: 70,
-  };
   //   스크롤 위치 값 파악하기
   const bt = useRef(null);
   const scrollFN = () => {
@@ -42,8 +25,8 @@ const Gotop = () => {
 
   return (
     <div
+      className="gotop"
       ref={bt}
-      style={style}
       onClick={() => {
         new Anime(window, {
           prop: "scroll",
@@ -52,7 +35,7 @@ const Gotop = () => {
         });
       }}
     >
-      <img src="/images/logo.png" alt="" style={img} />
+      <img src="/images/logo.png" alt="" />
       GoTop
     </div>
   );

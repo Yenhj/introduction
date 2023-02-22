@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ setPage, setOpen, open }) => {
   return (
@@ -35,7 +35,11 @@ const Header = ({ setPage, setOpen, open }) => {
               open ? setOpen(false) : setOpen(true);
             }}
           >
-            <FontAwesomeIcon icon={faBars} />
+            {open ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </span>
         </nav>
       </div>
