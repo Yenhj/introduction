@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Anime from "../assets/Anime";
 
 const Gotop = () => {
+  const path = process.env.PUBLIC_URL;
   //   스크롤 위치 값 파악하기
   const bt = useRef(null);
   const scrollFN = () => {
@@ -35,7 +36,7 @@ const Gotop = () => {
         });
       }}
     >
-      <img src="/images/logo.png" alt="" />
+      <img src={`${path}/images/logo.png`} alt="" />
       GoTop
     </div>
   );
