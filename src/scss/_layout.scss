@@ -39,9 +39,13 @@ body::-webkit-scrollbar-thumb {
 }
 h2 {
   padding: 50px 0;
-  color: #222;
-  font-size: 40px;
-  font-weight: 500;
+  color: white;
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 70px;
+  text-align: center;
+  text-decoration: underline #222 3px;
+  text-underline-position: under;
+
 }
 h3 {
   padding: 30px 0;

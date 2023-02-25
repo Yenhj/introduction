@@ -13,7 +13,7 @@ const Gotop = () => {
     } else {
       bt.current.classList.remove("active");
     }
-    console.log(scY);
+    // console.log(scY);
   };
 
   useEffect(() => {

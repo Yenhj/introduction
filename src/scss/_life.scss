@@ -1,5 +1,10 @@
 .life {
+  background-color: rgb(246, 226, 7);
   .inner {
+    h2 {
+      color: black;
+      text-decoration: underline white 3px;
+    }
     .contents {
       .life-list {
         display: flex;
